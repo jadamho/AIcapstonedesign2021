@@ -43,9 +43,9 @@ from tensorflow.keras.applications.resnet50 import preprocess_input as ResPre
 import matplotlib.pyplot as plt
 
 #Set up path for training/ test data. Need to map U C Berkeley - Darragh/ shared to your personal GDrive for this to work. 
-path="/mnt/data/guest1/crop_images/Training_Data"
-test_path="/mnt/data/guest1/crop_images/Test_Data"
-csvpath="/mnt/data/guest1/crop_images/csv"
+path="/mnt/data/guest1/mi_pp/Training_Data"
+test_path="/mnt/data/guest1/mi_pp/Test_Data"
+csvpath="/mnt/data/guest1/mi_pp/csv"
 os.listdir(path)
 
 # Function to load and individual image to a specified size.

@@ -85,10 +85,10 @@ random.seed(42)
 
 #Set up various paths
 #Set up path for csv files containing preprocessed images. CHange subfolder names to match your setup in google drive
-csvpath='/mnt/data/guest1/crop_images/csv'
-path="/mnt/data/guest1/crop_images/Training_Data"
-test_path=" /mnt/data/guest1/crop_images/Test_Data"
-modelpath='/mnt/data/guest1/crop_images/csv'
+csvpath='/mnt/data/guest1/mi_pp/csv'
+path="/mnt/data/guest1/mi_pp/Training_Data"
+test_path=" /mnt/data/guest1/mi_pp/Test_Data"
+modelpath='/mnt/data/guest1/mi_pp/csv'
 
 BASE_MODEL="resnet"  #CHoices are: vgg16, mobilenetv2, Xception
 
@@ -129,10 +129,10 @@ elif BASE_MODEL=='resnet':
   test_imagefile="Test-Images-res-224.csv"
   test_labelfile="Test-Labels-res-224.txt"
   input_shape=(224,224,3)
-  pretrained_model='species_classification_resnet101V2_model.h5'
+  pretrained_model='species_classification_resnet50_model.h5'
   preprocessor=ResPre
-  savefile='resnet101V2_best_model'
-  savemodel='resnet101V2_best_model.h5'
+  savefile='resnet50_best_model'
+  savemodel='resnet50_best_model.h5'
 
 elif BASE_MODEL=="vgg19":
     train_imagefile="Training-Images-VGG19-224.csv"

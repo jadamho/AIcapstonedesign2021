@@ -130,7 +130,7 @@ elif BASE_MODEL=="xception":
   preprocessor=XceptionPre
 
   # Set up path for csv files containing preprocessed images. Change subfolder names to match your setup in Google Drive.
-csvpath='/mnt/data/guest1/crop_images/csv'
+csvpath='/mnt/data/guest1/mi_pp/csv'
 
 # Function to load processed image data in csv files (both training and test data and their corresponding labels)
 def LoadData(train_imagefile=train_imagefile, train_labelfile=train_labelfile,
